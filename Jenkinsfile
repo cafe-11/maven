@@ -11,7 +11,7 @@ pipeline
         {
             steps
             {
-                git 'https://github.com/intelliqittrainings/maven.git'
+                git branch: 'main', credentialsId: 'git_creds', url: 'https://github.com/cafe-11/maven.git'
             }
         }
         stage('ContinuousBuild')
